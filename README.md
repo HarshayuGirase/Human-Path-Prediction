@@ -1,6 +1,6 @@
-# PECNet
+# PECNet: Pesdestrian Endpoint Conditioned trajectory prediction Network
 
-This repository contains the code for the paper It is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction. The paper will be presented as an ORAL at the 2020 European Conference on Computer Vision (ECCV).
+This repository contains the code for the paper **[It is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction](https://karttikeya.github.io/publication/htf/)**. 
 
 **<a href="https://arxiv.org/abs/2004.02025">It is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction</a>**
 <br>
@@ -12,15 +12,12 @@ This repository contains the code for the paper It is Not the Journey but the De
 <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>,
 <a href="https://www.linkedin.com/in/adrien-gaidon-63ab2358/">Adrien Gaidon</a>
 <br>
-Accepted to [ECCV 2020](https://eccv2020.eu/)
+Accepted to [ECCV 2020](https://eccv2020.eu/)(Oral)
 
-Human trajectory forecasting with multiple socially interacting agents is of critical importance
-for autonomous navigation in human environments, e.g., for self-driving cars and social robots.
-In this work, we present Predicted Endpoint Conditioned Network (PECNet) for flexible human trajectory prediction.
-PECNet infers distant trajectory endpoints to assist in long-range multi-modal trajectory prediction.
-A novel nonlocal social pooling layer enables PECNet to infer diverse yet socially compliant
-trajectories. Additionally, we present a simple “truncation trick” for improving few-shot
-multi-modal trajectory prediction performance.
+
+**Abstract**: Human trajectory forecasting with multiple socially interacting agents is of critical importance for autonomous navigation in human
+environments, e.g., for self-driving cars and social robots. In this work, we present Predicted Endpoint Conditioned Network (PECNet) for flexible
+human trajectory prediction. PECNet infers distant trajectory endpoints to assist in long-range multi-modal trajectory prediction. A novel nonlocal social pooling layer enables PECNet to infer diverse yet socially compliant trajectories. Additionally, we present a simple “truncation trick” for improving diversity and multi-modal trajectory prediction performance. 
 
 Below is an example of pedestrian trajectories predicted by our model and the corresponding ground truth. Each person is denoted by a different color, the past is denoted by circles, and the future is denoted by stars. The past is the same for both predictions and ground truth. The left image shows the future trajectory that our model predicts and the right image shows the ground truth future trajectory that actually occurs.
 <div align='center'>
@@ -40,7 +37,7 @@ If you find this code useful in your work then please cite
 ```
 
 ## Model
-Our model consists of two daisy chained steps: an endpoint prediction module and a social pooling module. The endpoint prediction module is a CVAE which models the desired end destination of a pedestrian as a representation of its past observed trajectories. The social pooling module considers the past history of all the pedestrians in the scene and their predicted endpoints from the endpoint module to predict socially compliant future trajectories.
+Our model consists of two sequential steps: an endpoint prediction module and a social pooling module. The endpoint prediction module is a CVAE which models the desired end destination of a pedestrian as a representation of its past observed trajectories. The social pooling module considers the past history of all the pedestrians in the scene and their predicted endpoints from the endpoint module to predict socially compliant future trajectories.
 
 <div align='center'>
   <img src='images/model.JPG' width='1000px'>
@@ -50,7 +47,7 @@ Our model consists of two daisy chained steps: an endpoint prediction module and
 All code was developed and tested on Ubuntu 16.04.6 with Python 3.6.6 and PyTorch 1.4.0 with CUDA 10.0.
 
 ## Pretrained Models
-Pretrained models are available in the saved_models folder.
+Pretrained models are available in the `saved_models` folder.
 
 ## Configuration File
 Configuration files (or config files) are used to load parameters such as hidden layer dimensions or learning rates into a model to be trained. To do this, first edit any of the parameters in the contents dictionary in config_gen.py in the config folder. Next, run config_gen.py using the following commands:
@@ -68,7 +65,7 @@ You can run the commmands:
 cd scripts
 python test_pretrained_model.py -lf <file_to_load>
 ```
-to easily run any of the pretrained models. The file_to_load is the name of the model ending in .pt in the saved_models folder. For example you can replicate our Table 2 results like this:
+to easily run any of the pretrained models. The `file_to_load` is the name of the model ending in `.pt` in the `saved_models` folder. For example you can replicate our Table 2 results like this:
 
 ```bash
 # Start in the project root directory
@@ -83,4 +80,4 @@ To train a new model, you can run the command:
 cd scripts
 python training_loop.py -cfn <config_file_name> -sf <model_save_name>
 ```
-where config_file_name is the name of the config file used to load the configuration parameters ending in .yaml and model_save_name is the name that is used when saving the model ending in .pt. You can use our optimal parameters as given by optimal.yaml or create your own config file by changing parameters in and running config_gen.py in the config folder.
+where `config_file_name` is the name of the config file used to load the configuration parameters ending in `.yaml` and `model_save_name` is the name that is used when saving the model ending in `.pt`. You can use our optimal parameters as given by `optimal.yaml` or create your own config file by changing parameters in and running `config_gen.py` in the config folder.
