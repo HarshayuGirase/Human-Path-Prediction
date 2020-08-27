@@ -1,4 +1,4 @@
-# PECNet: Pedestrian Endpoint Conditioned trajectory prediction Network
+# PECNet: Pedestrian Endpoint Conditioned Trajectory Prediction Network
 
 This repository contains the code for the paper **[It is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction](https://karttikeya.github.io/publication/htf/)**. 
 
