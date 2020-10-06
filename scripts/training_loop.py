@@ -48,10 +48,10 @@ def train(train_dataset):
 		x = traj[:, :hyper_params['past_length'], :]
 		y = traj[:, hyper_params['past_length']:, :]
 
-		x = x.view(-1, x.shape[1]*x.shape[2]) # (x,y,x,y ... )
+		x = x.contiguous().view(-1, x.shape[1]*x.shape[2]) # (x,y,x,y ... )
 		x = x.to(device)
 		dest = y[:, -1, :].to(device)
-		future = y[:, :-1, :].view(y.size(0),-1).to(device)
+		future = y[:, :-1, :].contiguous().view(y.size(0),-1).to(device)
 
 		dest_recon, mu, var, interpolated_future = model.forward(x, initial_pos, dest=dest, mask=mask, device=device)
 
