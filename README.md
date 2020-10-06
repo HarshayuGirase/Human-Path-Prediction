@@ -65,7 +65,7 @@ You can run the commmands:
 cd scripts
 python test_pretrained_model.py -lf <file_to_load>
 ```
-to easily run any of the pretrained models. The `file_to_load` is the name of the model ending in `.pt` in the `saved_models` folder. For example you can replicate our Table 2 results like this:
+to easily run any of the pretrained models. The `file_to_load` is the name of the model ending in `.pt` in the `saved_models` folder. For example you can replicate our Table 1 results like this:
 
 ```bash
 # Start in the project root directory
