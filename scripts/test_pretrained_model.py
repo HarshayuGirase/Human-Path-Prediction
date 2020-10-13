@@ -50,7 +50,7 @@ def test(test_dataset, model, best_of_n = 1):
 			y = traj[:, hyper_params["past_length"]:, :]
 			y = y.cpu().numpy()
 			# reshape the data
-			x = x.view(-1, x.shape[1]*x.shape[2])
+			x = x.contiguous().view(-1, x.shape[1]*x.shape[2])
 			x = x.to(device)
 
 			future = y[:, :-1, :]
