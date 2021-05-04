@@ -81,3 +81,6 @@ cd scripts
 python training_loop.py -cfn <config_file_name> -sf <model_save_name>
 ```
 where `config_file_name` is the name of the config file used to load the configuration parameters ending in `.yaml` and `model_save_name` is the name that is used when saving the model ending in `.pt`. You can use our optimal parameters as given by `optimal.yaml` or create your own config file by changing parameters in and running `config_gen.py` in the config folder.
+
+## Accessing Data
+This repo contains processed pickle files used for the Stanford Drone Dataset (SDD). We also provide processing scripts and data for the ETH/UCY datasets available here: https://drive.google.com/drive/folders/1ee9h_WtoXZhXZPT0H55uDFZaSmoArbf0?usp=sharing.
