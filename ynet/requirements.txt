@@ -1,0 +1,8 @@
+tqdm==4.48.0
+pyyaml==5.3.1
+matplotlib==3.2.2
+torch==1.5.1 --find-links https://download.pytorch.org/whl/torch_stable.html
+pandas==1.0.5
+opencv-python==4.4.0.42
+scipy==1.5.0
+segmentation_models_pytorch==0.1.0
