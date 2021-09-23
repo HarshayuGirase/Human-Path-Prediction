@@ -2,8 +2,6 @@
 
 This repository contains the code for the papers:
 
-**[It is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction](https://karttikeya.github.io/publication/htf/)**. 
-
 **<a href="https://arxiv.org/abs/2004.02025">It is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction</a>**
 <br>
 <a href="https://karttikeya.github.io/">Karttikeya Mangalam</a>,
