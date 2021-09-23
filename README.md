@@ -15,8 +15,10 @@ This repository contains the code for the papers:
   Accepted to [ECCV 2020](https://eccv2020.eu/)(Oral)
 
 - **[From Goals, Waypoints & Paths To Long Term Human Trajectory Forecasting](https://arxiv.org/abs/2012.01526)** \
+- <br>
   [Karttikeya Mangalam*](https://karttikeya.github.io/),
   [Yang An*](https://scholar.google.com/citations?user=9r5U-vsAAAAJ&hl=en),
   [Harshayu Girase](https://scholar.google.com/citations?user=alhRQ2IAAAAJ&hl=en),
   [Jitendra Malik](http://people.eecs.berkeley.edu/~malik/),
+  <br>
   Accepted to [ICCV 2021](https://iccv2021.thecvf.com/)
