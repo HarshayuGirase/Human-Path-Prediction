@@ -19,5 +19,5 @@ Accepted to [ECCV 2020](https://eccv2020.eu/)(Oral)
 [Karttikeya Mangalam*](https://karttikeya.github.io/),
 [Yang An*](https://scholar.google.com/citations?user=9r5U-vsAAAAJ&hl=en),
 [Harshayu Girase](https://scholar.google.com/citations?user=alhRQ2IAAAAJ&hl=en)
-[Jitendra Malik](http://people.eecs.berkeley.edu/~malik/),
+[Jitendra Malik](http://people.eecs.berkeley.edu/~malik/)
 Accepted to [ICCV 2021](https://iccv2021.thecvf.com/home) 
