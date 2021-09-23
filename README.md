@@ -13,6 +13,7 @@ This repository contains the code for the papers:
 <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>,
 <a href="https://www.linkedin.com/in/adrien-gaidon-63ab2358/">Adrien Gaidon</a>
 <br>
+
 Accepted to [ECCV 2020](https://eccv2020.eu/)(Oral)
 
 **[From Goals, Waypoints & Paths To Long Term Human Trajectory Forecasting](https://arxiv.org/abs/2012.01526)**
@@ -20,4 +21,5 @@ Accepted to [ECCV 2020](https://eccv2020.eu/)(Oral)
 [Yang An*](https://scholar.google.com/citations?user=9r5U-vsAAAAJ&hl=en),
 [Harshayu Girase](https://scholar.google.com/citations?user=alhRQ2IAAAAJ&hl=en)
 [Jitendra Malik](http://people.eecs.berkeley.edu/~malik/)
+
 Accepted to [ICCV 2021](https://iccv2021.thecvf.com/home) 
