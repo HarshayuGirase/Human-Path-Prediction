@@ -16,9 +16,9 @@ This repository contains the code for the papers:
 
 - **[From Goals, Waypoints & Paths To Long Term Human Trajectory Forecasting](https://arxiv.org/abs/2012.01526)** \
 - <br>
-  [Karttikeya Mangalam*](https://karttikeya.github.io/),
-  [Yang An*](https://scholar.google.com/citations?user=9r5U-vsAAAAJ&hl=en),
-  [Harshayu Girase](https://scholar.google.com/citations?user=alhRQ2IAAAAJ&hl=en),
-  [Jitendra Malik](http://people.eecs.berkeley.edu/~malik/),
+  <a href="https://karttikeya.github.io/">Karttikeya Mangalam*</a>,
+  <a href="https://scholar.google.com/citations?user=9r5U-vsAAAAJ&hl=en">Yang An*</a>,
+  <a href="https://www.linkedin.com/in/harshayu-girase-764b06153/">Harshayu Girase</a>,
+  <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>
   <br>
   Accepted to [ICCV 2021](https://iccv2021.thecvf.com/)
