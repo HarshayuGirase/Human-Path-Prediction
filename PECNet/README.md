@@ -26,15 +26,25 @@ Below is an example of pedestrian trajectories predicted by our model and the co
 </div>
 
 If you find this code useful in your work then please cite
-```
-@inproceedings{mangalam2020pecnet,
-  title={It is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction},
-  author={Mangalam, Karttikeya and Girase, Harshayu and Agarwal, Shreyas and Lee, Kuan-Hui and Adeli, Ehsan and Malik, Jitendra and Gaidon, Adrien},
-  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
-  month = {August},
-  year={2020}
-}
-```
+  ```
+  @inproceedings{mangalam2020pecnet,
+    title={It is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction},
+    author={Mangalam, Karttikeya and Girase, Harshayu and Agarwal, Shreyas and Lee, Kuan-Hui and Adeli, Ehsan and Malik, Jitendra and Gaidon, Adrien},
+    booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+    month = {August},
+    year={2020}
+  }
+  ```
+  ```
+  @inproceedings{mangalam2021goals,
+   author = {Mangalam, Karttikeya and An, Yang and Girase, Harshayu and Malik, Jitendra},
+   title = {From Goals, Waypoints \& Paths To Long Term Human Trajectory Forecasting},
+   booktitle = {Proc. International Conference on Computer Vision (ICCV)},
+   year = {2021},
+   month = oct,
+   month_numeric = {10}
+  }
+  ```
 
 ## Model
 Our model consists of two sequential steps: an endpoint prediction module and a social pooling module. The endpoint prediction module is a CVAE which models the desired end destination of a pedestrian as a representation of its past observed trajectories. The social pooling module considers the past history of all the pedestrians in the scene and their predicted endpoints from the endpoint module to predict socially compliant future trajectories.
