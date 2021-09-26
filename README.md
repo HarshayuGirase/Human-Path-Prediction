@@ -12,7 +12,7 @@ This repository contains the code for the papers:
   <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>,
   <a href="https://www.linkedin.com/in/adrien-gaidon-63ab2358/">Adrien Gaidon</a>
   <br>
-  Published at [ECCV 2020](https://eccv2020.eu/)(Oral)
+  Accepted at [ECCV 2020](https://eccv2020.eu/)(Oral)
   
   **Abstract**: Human trajectory forecasting with multiple socially interacting agents is of critical importance for autonomous navigation in human
   environments, e.g., for self-driving cars and social robots. In this work, we present Predicted Endpoint Conditioned Network (PECNet) for flexible
