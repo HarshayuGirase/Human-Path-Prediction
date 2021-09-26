@@ -14,15 +14,15 @@ This repository contains the code for the papers:
   <br>
   Published at [ECCV 2020](https://eccv2020.eu/)(Oral)
   
-  **Abstract**: Human trajectory forecasting with multiple socially interacting agents is of critical importance for autonomous navigation in human
+**Abstract**: Human trajectory forecasting with multiple socially interacting agents is of critical importance for autonomous navigation in human
 environments, e.g., for self-driving cars and social robots. In this work, we present Predicted Endpoint Conditioned Network (PECNet) for flexible
 human trajectory prediction. PECNet infers distant trajectory endpoints to assist in long-range multi-modal trajectory prediction. A novel nonlocal social pooling layer enables PECNet to infer diverse yet socially compliant trajectories. Additionally, we present a simple “truncation trick” for improving diversity and multi-modal trajectory prediction performance. 
 
-  Below is an example of pedestrian trajectories predicted by our model and the corresponding ground truth. Each person is denoted by a different color, the past is denoted by circles, and the future is denoted by stars. The past is the same for both predictions and ground truth. The left image shows the future trajectory that our model predicts and the right image shows the ground truth future trajectory that actually occurs.
-  <div align='center'>
-  <img src="images/predicted.gif" style="display: inline; border-width: 0px;" width=410px></img>
-  <img src="images/ground_truth.gif" style="display: inline; border-width: 0px;" width=410px></img>
-  </div>
+Below is an example of pedestrian trajectories predicted by our model and the corresponding ground truth. Each person is denoted by a different color, the past is denoted by circles, and the future is denoted by stars. The past is the same for both predictions and ground truth. The left image shows the future trajectory that our model predicts and the right image shows the ground truth future trajectory that actually occurs.
+<div align='center'>
+<img src="images/predicted.gif" style="display: inline; border-width: 0px;" width=410px></img>
+<img src="images/ground_truth.gif" style="display: inline; border-width: 0px;" width=410px></img>
+</div>
 
 - **<a href="https://arxiv.org/abs/2012.01526">From Goals, Waypoints & Paths To Long Term Human Trajectory Forecasting</a>**
   <br>
