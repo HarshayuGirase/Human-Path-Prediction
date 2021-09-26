@@ -25,6 +25,8 @@ This repository contains the code for the papers:
   
   This repository supports several state of the pedestrian trajectory forecasting models on both short term (3.2 seconds input, 4.8 seconds ouput) and long term (upto a minute in future) prediction horizons. 
   
+Keywords: human path prediction, human trajectory prediction, human path forecasting, pedestrian location forecasting, location prediction, position forecasting, future path forecasting, long term prediction, instantaneous prediction, next second location 
+
 ## Datasets
   
 **Stanford Drone Dataset**: 
