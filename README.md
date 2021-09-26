@@ -20,8 +20,8 @@ This repository contains the code for the papers:
 
   Below is an example of pedestrian trajectories predicted by our model and the corresponding ground truth. Each person is denoted by a different color, the past is denoted by circles, and the future is denoted by stars. The past is the same for both predictions and ground truth. The left image shows the future trajectory that our model predicts and the right image shows the ground truth future trajectory that actually occurs.
   <div align='center'>
-  <img src="images/predicted.gif" style="display: inline; border-width: 0px;" width=410px></img>
-  <img src="images/ground_truth.gif" style="display: inline; border-width: 0px;" width=410px></img>
+  <img src="images/predicted.gif" style="display: inline; border-width: 0px;" width=300px></img>
+  <img src="images/ground_truth.gif" style="display: inline; border-width: 0px;" width=300px></img>
   </div>
 
 - **<a href="https://arxiv.org/abs/2012.01526">From Goals, Waypoints & Paths To Long Term Human Trajectory Forecasting</a>**
