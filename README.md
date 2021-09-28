@@ -85,6 +85,8 @@ Keywords: human path prediction, human trajectory prediction, human path forecas
   <img src="images/ground_truth.gif" style="display: inline; border-width: 0px;" width=350px></img>
   </div>
 
+
+
 **<a href="https://arxiv.org/abs/2012.01526">From Goals, Waypoints & Paths To Long Term Human Trajectory Forecasting</a>**
   <br>
   <a href="https://karttikeya.github.io/">Karttikeya Mangalam*</a>,
