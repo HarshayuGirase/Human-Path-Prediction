@@ -23,9 +23,9 @@ This repository contains the code for the papers:
   <br>
   Accepted to [ICCV 2021](https://iccv2021.thecvf.com/)
   
-  This repository supports several state of the pedestrian trajectory forecasting models on both short term (3.2 seconds input, 4.8 seconds ouput) and long term (upto a minute in future) prediction horizons. 
+  This repository supports several state of the art pedestrian trajectory forecasting models on both short term (3.2 seconds input, 4.8 seconds ouput) and long term (upto a minute in future) prediction horizons. To train/test models, please visit the PECNet and Ynet folders for model-specific code. 
   
-Keywords: human path prediction, human trajectory prediction, human path forecasting, pedestrian location forecasting, location prediction, position forecasting, future path forecasting, long term prediction, instantaneous prediction, next second location 
+Keywords: human path prediction, human trajectory prediction, human path forecasting, pedestrian location forecasting, location prediction, position forecasting, future path forecasting, long term prediction, instantaneous prediction, next second location, multi-agent forecasting, behavior prediction
 
 ## Datasets
   
@@ -79,7 +79,7 @@ Keywords: human path prediction, human trajectory prediction, human path forecas
   environments, e.g., for self-driving cars and social robots. In this work, we present Predicted Endpoint Conditioned Network (PECNet) for flexible
   human trajectory prediction. PECNet infers distant trajectory endpoints to assist in long-range multi-modal trajectory prediction. A novel nonlocal social pooling layer enables PECNet to infer diverse yet socially compliant trajectories. Additionally, we present a simple “truncation trick” for improving diversity and multi-modal trajectory prediction performance. 
 
-  Below is an example of pedestrian trajectories predicted by our model and the corresponding ground truth. Each person is denoted by a different color, the past is denoted by circles, and the future is denoted by stars. The past is the same for both predictions and ground truth. The left image shows the future trajectory that our model predicts and the right image shows the ground truth future trajectory that actually occurs.
+  Below is an example of pedestrian trajectories predicted by our model and the corresponding ground truth. Left pane shows future trajectories for 9.6 seconds predicted in a recurrent input fashion. Right pane shows the predicted trajectories for future 4.8 seconds at an intersection. Solid circles represent the past input & stars represent the future ground truth. Predicted multi-modal trajectories are shown as translucent circles jointly for all present pedestrians. Animation is best viewed in Adobe Acrobat Reader. More video visualizations available at project homepage: https://karttikeya.github.io/publication/htf/
   <div align='center'>
   <img src="images/predicted.gif" style="display: inline; border-width: 0px;" width=350px></img>
   <img src="images/ground_truth.gif" style="display: inline; border-width: 0px;" width=350px></img>
