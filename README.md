@@ -47,7 +47,7 @@ Keywords: human path prediction, human trajectory prediction, human path forecas
     - Hand Annotated Segmentation Maps 
     - SOTA trajectory prediction trained prediction models as well as training/evaluation code 
   
-  We hope this allows easy benchmarking of several baselines as well as state-of-the-art path prediction models across several datasets and settings. If you find this reposotory or any code thereof useful in your work, kindly cite: 
+  We hope this allows easy benchmarking of several baselines as well as state-of-the-art path prediction models across several datasets and settings. If you find this repository or any code thereof useful in your work, kindly cite: 
   
   ```
   @inproceedings{mangalam2020pecnet,
