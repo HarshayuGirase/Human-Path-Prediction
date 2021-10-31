@@ -130,11 +130,12 @@ def image2world(image_coords, scene, homo_mat, resize):
 	return traj_image2world
 
 def plot_results(gt_future, future_samples, observed, scene_image, im, resize):
-	plt.scatter(gt_future.cpu()[1,:,0]/resize, gt_future.cpu()[1,:,1]/resize)
-	plt.scatter(future_samples.cpu()[:,1,:,0]/resize, future_samples.cpu()[:,1,:,1]/resize, alpha=0.1)
-	plt.scatter(observed[5:10,0]/resize, observed[5:10,1]/resize)
+	plt.scatter(gt_future.cpu()[1,:,0]/resize, gt_future.cpu()[1,:,1]/resize, label='ground truth')
+	plt.scatter(future_samples.cpu()[:,1,:,0]/resize, future_samples.cpu()[:,1,:,1]/resize, label='predictions', alpha=0.1)
+	plt.scatter(observed[5:10,0]/resize, observed[5:10,1]/resize, label='observed_past')
 	scene_image_rescaled = rescale(scene_image.cpu().squeeze()[1].squeeze(), 1/resize)
 	plt.imshow(scene_image_rescaled)
-	plt.imshow(im, alpha=0.5)							
+	plt.imshow(im, alpha=0.5)
+	plt.legend()							
 	plt.show()
 
