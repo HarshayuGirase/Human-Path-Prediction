@@ -2,6 +2,8 @@ import numpy as np
 import torch
 import cv2
 import torch.nn.functional as F
+import skimage.io
+from skimage.transform import rescale, resize, downscale_local_mean
 
 def gkern(kernlen=31, nsig=4):
 	"""	creates gaussian kernel with side length l and a sigma of sig """
