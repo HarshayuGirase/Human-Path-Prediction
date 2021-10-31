@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-from utils.image_utils import get_patch, sampling, image2world
+from utils.image_utils import get_patch, sampling, image2world, plot_results
 from utils.kmeans import kmeans
-
+import skimage.io
 
 def torch_multivariate_gaussian_heatmap(coordinates, H, W, dist, sigma_factor, ratio, device, rot=False):
 	"""
@@ -215,5 +215,7 @@ def evaluate(model, val_loader, val_images, num_goals, num_traj, obs_len, batch_
 
 		val_ADE = torch.cat(val_ADE).mean()
 		val_FDE = torch.cat(val_FDE).mean()
+		
+		plot_results(gt_future, future_samples, observed, scene_image, im, resize)
 
 	return val_ADE.item(), val_FDE.item()
