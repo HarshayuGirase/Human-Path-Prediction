@@ -50,6 +50,8 @@ Please download the pretrained models, data and config files from: https://drive
 Extract the zip file into the main folder.
 
 **Due to copyright, we cannot provide data from the inD dataset**
+Please request the inD file from the authors and then use the `utils/preprocessing_inD.py` file for preprocessing.
+
 
 ## Configuration File
 Configuration files (or config files) are used to load hyperparameters such as hidden layer dimensions or learning rates into a model to be trained. The hyperparameters can be easily changed in the corresponding yaml files.
