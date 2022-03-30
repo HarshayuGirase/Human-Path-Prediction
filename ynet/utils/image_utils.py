@@ -2,6 +2,9 @@ import numpy as np
 import torch
 import cv2
 import torch.nn.functional as F
+import matplotlib.pyplot as plt
+import skimage.io
+from skimage.transform import rescale, resize, downscale_local_mean
 
 def gkern(kernlen=31, nsig=4):
 	"""	creates gaussian kernel with side length l and a sigma of sig """
@@ -135,3 +138,20 @@ def image2world(image_coords, scene, homo_mat, resize):
 	traj_image2world = traj_image2world[:, :2]
 	traj_image2world = traj_image2world.view_as(image_coords)
 	return traj_image2world
+
+def plot_results(gt_future, future_samples, observed, scene_image, im, resize, with_bg=True, save_path=None):
+	plt.scatter(gt_future.cpu()[1,:,0]/resize, gt_future.cpu()[1,:,1]/resize, label='ground truth', zorder=3)
+	plt.scatter(future_samples.cpu()[:,1,:,0]/resize, future_samples.cpu()[:,1,:,1]/resize, label='predictions', alpha=0.1, zorder=2)
+	plt.scatter(observed[5:10,0]/resize, observed[5:10,1]/resize, label='observed_past', color='cyan', zorder=1)
+	scene_image_rescaled = rescale(scene_image.cpu().squeeze()[1].squeeze(), 1/resize)
+	im_rescaled = rescale(im.cpu().squeeze()[1].squeeze(), 1/resize)
+	plt.imshow(scene_image_rescaled, alpha=0.001)
+	if with_bg:
+		plt.imshow(scene_image_rescaled)
+		plt.imshow(im_rescaled, alpha=0.7)
+	plt.legend()							
+	
+	if save_path is not None:
+		plt.savefig(save_path)
+	plt.show()
+
