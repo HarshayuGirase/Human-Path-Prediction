@@ -46,8 +46,12 @@ Human trajectory forecasting is an inherently multimodal problem. Uncertainty in
 All code was developed and tested on Windows 10 with Python 3.8.3 and PyTorch 1.5.1 with CUDA 10.2. The necessary libraries can be found in the requirements.txt. Note that PyTorch and nb_conda_kernels are commented out in the requirements.txt to be compatible with different systems and CUDA versions and needs to be manually installed. 
 
 ## Pretrained Models, Data and Config files
-Please download the pretrained models, data and config files from: https://drive.google.com/file/d/1LBmPzp_qypVGzbJbPzt57wtttonPGUaW/view?usp=sharing
+Please download the pretrained models, data and config files from: https://drive.google.com/file/d/1u4hTk_BZGq1929IxMPLCrDzoG3wsZnsa/view?usp=sharing
 Extract the zip file into the main folder.
+
+**Due to copyright, we cannot provide data from the inD dataset**
+Please request the inD file from the authors and then use the `utils/preprocessing_inD.py` file for preprocessing.
+
 
 ## Configuration File
 Configuration files (or config files) are used to load hyperparameters such as hidden layer dimensions or learning rates into a model to be trained. The hyperparameters can be easily changed in the corresponding yaml files.

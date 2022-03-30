@@ -14,6 +14,8 @@ This repository contains the code for the paper **[It is Not the Journey but the
 <br>
 Accepted to [ECCV 2020](https://eccv2020.eu/)(Oral)
 
+*This work was [**reproduced**](https://openreview.net/pdf?id=5M4oJ5b6Dc_) and extended upon with some improvements by a third-party.*
+
 
 **Abstract**: Human trajectory forecasting with multiple socially interacting agents is of critical importance for autonomous navigation in human
 environments, e.g., for self-driving cars and social robots. In this work, we present Predicted Endpoint Conditioned Network (PECNet) for flexible
